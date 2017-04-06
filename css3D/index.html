@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>3D正方形旋转</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="my3D">
+		<div class="square">
+			<div class="pages page1">1</div>
+			<div class="pages page2">2</div>
+			<div class="pages page3">3</div>
+			<div class="pages page4">4</div>
+			<div class="pages page5">5</div>
+			<div class="pages page6">6</div>
+		</div>
+	</div>
+	<button type="button" id="btn">开始旋转</button>
+	<script>
+		document.getElementById('btn').onclick=function(){
+			document.getElementsByClassName('square')[0].style.webkitAnimation='mydhua 8s linear infinite'
+			this.style.display='none';
+		}
+	</script>
+</body>
+</html>

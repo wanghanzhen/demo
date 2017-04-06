@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.my3D{
+	-webkit-perspective: 800;
+	-webkit-perspective-origin: 50% 50%;
+	overflow: hidden;
+	background: black;
+}
+
+.square{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+	transform-origin: center center -100px;
+
+}
+
+.pages{
+	width: 200px;
+	height: 200px;
+	left: 400px;
+	top: 400px;
+	position: absolute;
+	font-size: 100px;
+	line-height: 200px;
+	color: white;
+	text-align: center;
+}
+.page1{
+	background: rgba(128,0,128,.5);
+}
+.page2{
+	background: rgba(255,0,255,.5);
+	-webkit-transform: translateX(-50%) translateZ(-100px) rotateY(90deg);
+}
+.page3{
+	background: rgba(255,153,204,.5);
+	-webkit-transform: translateY(-50%) translateZ(-100px) rotateX(90deg);
+}
+.page4{
+	background: rgba(0,204,255,.5);
+	-webkit-transform: translateX(50%) translateZ(-100px) rotateY(-90deg);
+}
+.page5{
+	background: rgba(153,204,255,.5);
+	-webkit-transform: translateY(50%) translateZ(-100px) rotateX(-90deg);
+}
+.page6{
+	background: rgba(0,255,255,.5);
+	-webkit-transform:translateZ(-200px);
+}
+
+
+@-webkit-keyframes mydhua{
+	0%{
+		-webkit-transform:rotateX(0deg) rotateY(0deg)  rotateZ(0deg);
+	}
+	100%{
+		-webkit-transform:rotateX(360deg) rotateY(360deg)  rotateZ(360deg);
+	}
+}
+button{
+	position: absolute;
+	top:650px;
+	left: 900px;
+	height: 50px;
+	width: 100px;
+	background:rgba(0,255,255,.5);
+	border: none;
+}
+
+
+
+
+
+
